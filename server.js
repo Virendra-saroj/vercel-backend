@@ -30,7 +30,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/requests', requestRoutes);
 
 // Port setup
-const PORT = process.env.PORT || 5000 + Math.floor(Math.random() * 1000);
+const PORT = process.env.PORT || 5001;
 
 // Server start with error handling
 const server = app.listen(PORT, () => {

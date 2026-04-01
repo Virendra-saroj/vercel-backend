@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
+app.get('/', (req, res) => {
+  res.send('✅ Scheduler API is running perfectly on Vercel!');
+});
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const requestRoutes = require('./routes/requests');
